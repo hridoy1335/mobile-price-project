@@ -6,4 +6,5 @@ setuptools
 dill
 matplotlib
 seaborn
+python-dotenv
 -e .
