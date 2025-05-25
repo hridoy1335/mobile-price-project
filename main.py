@@ -1,3 +1,6 @@
-from src.mobile.logger import logging
+# from src.logger import Logger
+# from src.exception import CustomException
+from src.utils.file_util import load_mongoDB
 
-logging.info('hellow')
+data = load_mongoDB()
+print(data.shape)

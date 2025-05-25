@@ -7,4 +7,6 @@ dill
 matplotlib
 seaborn
 python-dotenv
+dvc
+mlflow
 -e .
