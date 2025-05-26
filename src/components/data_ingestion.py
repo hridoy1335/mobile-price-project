@@ -21,8 +21,9 @@ class DataIngestion:
     def initiate_data_ingestion(self)->pd.DataFrame:
         try:
             logging.info('loading the data from mongodb database')
-            data = load_mongoDB()
-            df = data.iloc[:,1:]
+            # data = load_mongoDB()
+            data = pd.read_csv(os.path.join('notebook/data','raw.csv'))
+            df = data
             
             os.makedirs(os.path.dirname(self.data_ingestion_config.raw),exist_ok=True)
             df.to_csv(self.data_ingestion_config.raw,index=False,header=True)

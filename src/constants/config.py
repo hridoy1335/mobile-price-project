@@ -15,3 +15,9 @@ MONGO_DB_COLLECTION:str = "mobileDataset"
 TRAIN_DATA_PATH:str = os.path.join('artifacts','train_data.csv')
 TEST_DATA_PATH:str = os.path.join('artifacts','test_data.csv')
 RAW_DATA_PATH:str = os.path.join('artifacts','raw.csv')
+
+
+# Data Transformation Constants Files
+PREPROSSESOR_OBJECT:str = os.path.join('artifacts','preprossesor.pkl')
+# TRAIN_ARRAY:str = os.path.join('artifacts','train_array')
+# TEST_ARRAY:str = os.path.join('artifacts','test_array')
